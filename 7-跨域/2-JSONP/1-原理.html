@@ -26,7 +26,13 @@
     </script>
     <!-- <script src="http://127.0.0.1:5500/%E8%AF%BE%E5%A0%82/%E4%BB%A3%E7%A0%81/7-%E8%B7%A8%E5%9F%9F/2-JSONP/js/app.js"></script> -->
     <script src="http://127.0.0.1:8000/jsonp-server"></script>
-
+    <!--jsonp-server来源于服务器。jsonp实现跨域的原里：返回的结果就是一个函数调用，而这个函数的实参就是我们想给客户端返回的结果数据-->
+    <!--    在jsonp-server中的部分代码-->
+    <!--    const data={-->
+    <!--        name:"yzk"-->
+    <!--    };-->
+    <!--    let str=JSON.stringfy(data);-->
+    <!--    response.end(`handle(${str})`);-->
 </body>
 
 </html>
